@@ -18,12 +18,15 @@ h3 {
 
 /* Header */
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Containers */
 div {
-  background-color: #eae2b7;
+  /*background-color: #eae2b7;*//*this line seems to be breaking things*/
   margin: auto;
   width: 600px;
 }
@@ -52,7 +55,6 @@ a:hover {
 }
 
 nav a {
-  text-align: center;
   padding-left: 20px;
 }
 
@@ -64,8 +66,6 @@ img {
 }
 
 .image-circle {
-  align-items: left;
-  display: flex;
   border: 2px solid #003049;
   border-radius: 50%;
 }
@@ -80,29 +80,20 @@ hr {
   border: 1px solid black;
 }
 
-.headercontainer {
+.about {
   display: flex;
   align-items: center;
-  width: 100%;
-  justify-content: center;
 }
 
-.contactpete {
-  display: flex;
-  flex-direction: row;
-}
-
-.row {
-  flex-direction: column;
-  width: 50%;
-  padding: 10px;
-}
-
-.bold {
-  font-weight: bold;
+.align-left{
   text-align: left;
 }
 
-.space {
-    padding: 25px
+.portfolio{
+  display: flex;
+  text-align: center;
+}
+
+article#portfolio p{
+  font-size: 14px;
 }
